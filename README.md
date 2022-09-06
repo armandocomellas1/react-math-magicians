@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Math Magicians: setup
 
-This project is about creating a math calculator with 3 pages but this time builded with react.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Built With
+## Available Scripts
 
 - HTML5.
 - CSS.
@@ -17,7 +17,7 @@ This project is about creating a math calculator with 3 pages but this time buil
 - ECMA6
 - The header have 3 pages, Home, Calulator and Quote.
 
-## Getting Started
+## Getting Started with Create React App
 
 If you want to clone this project:
 - Go to GitHub repository
