@@ -1,5 +1,5 @@
 name: Linters
-//Do
+
 on: pull_request
 
 env:
