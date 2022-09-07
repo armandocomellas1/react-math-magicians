@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/src/App.scss
+src/App.scss
 /.pnp
 .pnp.js
 
