@@ -27,7 +27,7 @@ If you want to clone this project:
 
 ## Live demo video
 
-- Will be avaialable once the project is finished.
+- Will be avaialable once the project is finished but the UI is ready now.
 
 ### Prerequisites
 - Code editor
