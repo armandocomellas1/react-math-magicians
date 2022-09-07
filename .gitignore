@@ -2,8 +2,10 @@
 
 # dependencies
 /node_modules
+/src/App.scss
 /.pnp
 .pnp.js
+App.scss
 
 # testing
 /coverage
