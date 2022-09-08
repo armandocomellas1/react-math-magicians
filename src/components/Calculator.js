@@ -1,6 +1,8 @@
 import React from 'react';
 import calculate from '../logic/calculate';
 
+let nextNumber = 0;
+
 const numberWithCommas = (x) => {
   const parts = x.toString().split('.');
   parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -52,6 +54,16 @@ export default class Calculator extends React.Component {
       next: nextNull,
       operation: operaNull,
     });
+
+    if (resultBack.next !== null) {
+      nextNumber = resultBack.next.toString();
+    } else if (resultBack.total !== null) {
+      nextNumber = resultBack.total.toString();
+    } else if (resultBack.next !== null && resultBack.total !== null && resultBack.operation !== '') {
+      nextNumber = this.state.operation.toString();
+    } else {
+      nextNumber = 0;
+    }
   }
 
   handleChange(event) {
@@ -62,7 +74,7 @@ export default class Calculator extends React.Component {
     return (
       <div className="App">
         <section className="operation">
-          <input className="Enter" type="text" name="enter" value={numberWithCommas(this.state.total)} onChange={this.handleChange} />
+          <input className="Enter" type="text" name="enter" value={numberWithCommas(nextNumber)} onChange={this.handleChange} />
         </section>
         <section className="maths">
           <input className="ac" type="button" name="AC" value="AC" onClick={this.handleClick} />
